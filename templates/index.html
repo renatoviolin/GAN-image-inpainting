@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='../static/jquery.js'></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+        crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+
+<body id="body">
+    <h2> Deep Learning in Action - GAN to inpaint images </h2>
+    <div class="overlay">
+        <div class="spinner-border text-primary" role="status"><span class="sr-only">Loading...</span></div>
+    </div>
+    <form enctype="multipart/form-data">
+        <div class="row">
+            <div class="col-md-12">
+                <br>
+                <div class="div-img" id='div-img'>
+                    <img id='image_raw' src="" width=384 height=384>
+                    <canvas id="drawing" width=384 height=384></canvas>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-2 text-center">
+            <br>
+            <input type="file" id="input_file">
+            <button class="btn btn-block btn-primary" id="btn_upload">Upload your picture </button>
+        </div>
+        <div class="col-md-2 text-center">
+            <br>
+            <a class="btn btn-block btn-success" id="btn_process">Process</a>
+        </div>
+        <div class="col-md-2 text-center">
+            <br>
+            <a class="btn btn-block btn-danger" id="btn_clear">Clear</a>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+
+    <div class="row row-result">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+            <hr>
+            <h4 class="text-center">Region-wise-Inpainting</h4>
+            <p class="text-center">https://github.com/vickyFox/Region-wise-Inpainting</p>
+            <div class="div-img" id='div-result-1'></div>
+        </div>
+        <div class="col-md-4">
+            <hr>
+            <h4 class="text-center">Generatitve-Inpainting</h4>
+            <p class="text-center">https://github.com/JiahuiYu/generative_inpainting</p>
+            <div class="div-img" id='div-result-2'></div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    <div class="row row-result">
+        <div class="col-md-12">
+            <hr>
+            <h4 class="text-center">Pluralistic Image Completation</h4>
+            <p class="text-center">https://github.com/lyndonzheng/Pluralistic-Inpainting</p>
+            <div class="div-img" id='div-result-3'>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="../static/draw.js"></script>
+<script src="../static/app.js"></script>

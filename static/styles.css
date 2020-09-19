@@ -1,0 +1,52 @@
+body {
+    background: #efefef;
+}
+.overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	text-align: center;
+	display: none;
+	z-index: 1000 !important;
+}
+
+.spinner-border {
+	top: 50% !important;
+	position: absolute;
+}
+
+.row-result {
+    display: none;
+}
+
+h2 {
+	font-size: 30px;
+	text-align: center;
+	width: 100%;
+	background: #1462dc;
+	padding: 13px;
+	line-height: 30px;
+	color: white;
+}
+
+.row {
+    margin: 0px !important;
+}
+
+.div-img {
+    text-align: center;
+}
+
+canvas {
+    position: absolute;
+    margin-left: -384px;
+}
+
+#input_file {
+    display: none;
+}
+
+.img_result {
+    margin: 10px;
+    border: solid 0.5px;
+}
