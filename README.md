@@ -14,13 +14,13 @@ This app uses implementations and pre-trained models from:
 More implementations soon.
 
 ## Install
-Each implementation has pretrained models. You can navigate in model folders to get a readme.txt with the download link.
+Each implementation has pretrained models. You can navigate in model folders to get a <b>readme.txt</b> with the download link.
 
 
 ## Run
 ```python app.py ```
 
-Open your browser and navigate: http://localhost:90000
+Open your browser and navigate: http://localhost:9000
 
 
 ## Demo
